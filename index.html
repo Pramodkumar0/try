@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylee.css">
+    <script src="https://kit.fontawesome.com/58098877f2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="container">
+    <div class="left"><b>Tasks</b> <span>list</span></div>  
+<a href="./indexx.html"></a>
+        <div class="right" id="right" onclick="addbox()">Add item</div>
+    </div>
+
+    </div>
+
+    <div id="parennt"></div>
+    <!-- <div id="a"></div> -->
+
+
+<script>
+    
+    function addbox()
+
+    {
+    // document.getElementById("container").style.display = "none"
+    // document.getElementById("container").style.filter = "blur(3px)" 
+
+
+       let div =  document.getElementById("right") 
+       let di =  document.getElementsByClassName("left")[0]
+       let box = document.createElement("div")
+       div.style.filter = "blur(4px)"
+       di.style.filter = "blur(4px)"
+       box.setAttribute('class','box')
+       let exmthd = document.getElementById("container")
+       exmthd.append(box)
+       box.innerHTML =
+                        `                         
+                        <label for="box">Add New List</label>
+                            <br><br>
+                            <input type="text" id="text"value="" class="text"  >
+                            <button class="btn" onclick="execute()">Add</button>
+                            <button id="btn">Close</button> 
+                        
+                        `;    
+
+    }
+     
+    let tasklist = [];
+        const execute = ()=>{
+        const innertext = document.getElementById("text").value;
+        const temobj = {
+            id : Date.now(),
+            name : innertext
+        }
+        tasklist.push(temobj);
+        console.log(tasklist);
+        down()
+    }
+function down(){
+
+
+     let card = document.createElement("div")
+     card.setAttribute('class','cards')
+    
+     let parennt = document.getElementById("parennt")
+     card.innerText = tasklist[tasklist.length-1].name
+     parennt.appendChild(card)
+     
+     let hr = document.createElement("hr")
+     hr.style.margin = "10px 0px"
+     card.append(hr)    
+
+     let p = document.createElement("p")
+        p.setAttribute('id','plus')
+        p.setAttribute('onclick','excute()')
+        p.innerText = "Add"
+        p.style.fontSize = "15px"
+        card.append(p)
+         
+        let p1 = document.createElement("p")
+        p1.setAttribute('id','dlt')
+        p1.innerText = "delete"
+        card.append(p1)
+
+
+}
+
+     
+     
+
+
+
+    
+    function excute(){
+        let p = document.getElementById("plus")
+        let element = document.createElement("div")
+
+
+        element.innerHTML = ` <label for="box">Add New List</label>
+                            <br><br>
+                            <input type="text" id="text"value="" class="text"  >
+                            <button class="btn" onclick="execute()">Add</button>
+                            <button id="btn">Close</button> `;
+
+        
+
+    }
+  
+</script>
+
+
+</div>
+
+    
+    
+      
+
+    </div>
+    <script src="./index.js"></script>
+    </body>

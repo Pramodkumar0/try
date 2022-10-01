@@ -1,0 +1,162 @@
+*{
+    background-color: black;
+    color: antiquewhite;
+}
+#container{
+    background-color: black;
+    height: 90vh;
+}
+
+.left{
+    background-color: black;
+    color: blue;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    left: 10vw;
+    top: 5vw;
+}
+.right
+{
+    background-color: black;
+    color: skyblue;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+    cursor: pointer;
+}
+.box{
+    background-color: rgb(224, 162, 46);
+    border: 1px solid tomato;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    margin: 15vw;
+    margin-left: 40vw;
+    color: white;
+    font-size: 15px;
+    
+    
+
+} 
+
+#text{
+    font-size: 25px;
+}
+.btn{
+    background-color: tomato;
+    font-size: 20px;
+    margin-top: 5vh;
+    border: 3px solid tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#btn{
+    background-color: tomato;
+    display: flex;
+    display: inline-block;
+    font-size: 20px;
+    border: 3px solid tomato;
+    border-radius: 5px;
+    margin-top: 5vh;
+    cursor: pointer;
+  
+    
+}
+.text{ 
+     background-color: white; 
+     font-size: 40px; 
+     color: black;
+     
+}
+
+#parennt{
+    
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+
+}
+
+#a{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+#plus{
+    background-color: blue;
+    width: 50px;
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 9vw;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+#dlt{
+    background-color: red;
+    width: 50px;
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 11vw;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+#inpt{
+    font-size: 10px;
+}
+.background{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+    
+
+}
+.cards{
+    background-color: wheat;
+    color: black;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+#parennt{
+    /* background-color: rgb(36, 32, 32); */
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+
+}
+#plus{
+    background-color: blue;
+    width: 50px;
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 9vw;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+#dlt{
+    background-color: red;
+    width: 50px;
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 11vw;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
